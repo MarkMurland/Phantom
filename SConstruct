@@ -73,6 +73,7 @@ platform_flags = {}  # flags for each platform
 platform_doc_class_path = {}
 platform_exporters = []
 platform_apis = []
+allowed_platforms = {"linuxbsd", "windows"}
 
 for x in sorted(glob.glob("platform/*")):
     if not os.path.isdir(x) or not os.path.exists(x + "/detect.py"):
@@ -92,6 +93,10 @@ for x in sorted(glob.glob("platform/*")):
         pass
 
     platform_name = x[9:]
+    if platform_name not in allowed_platforms:
+        sys.path.remove(tmppath)
+        sys.modules.pop("detect")
+        continue
 
     if os.path.exists(x + "/export/export.cpp"):
         platform_exporters.append(platform_name)
@@ -450,9 +455,6 @@ opts.Update(env, {**ARGUMENTS, **env.Dictionary()})
 Help(opts.GenerateHelpText(env))
 
 
-# FIXME: Tool assignment happening at this stage is a direct consequence of getting the platform logic AFTER the SCons
-# environment was already been constructed. Fixing this would require a broader refactor where all options are setup
-# ahead of time with native validator/converter functions.
 tmppath = "./platform/" + env["platform"]
 sys.path.insert(0, tmppath)
 import detect
@@ -776,7 +778,7 @@ else:
         if env["debug_paths_relative"]:
             # Remap absolute paths to relative paths for debug symbols.
             project_path = Dir("#").abspath
-            env.AppendUnique(CCFLAGS=[f"-ffile-prefix-map={project_path}=."])
+            env.AppendUnique(CCFLAGS=[f"-ffile-prefix-map={project_path}="])
     else:
         if methods.is_apple_clang(env):
             # Apple Clang, its linker doesn't like -s.
@@ -915,9 +917,6 @@ else:  # GCC, Clang
                 ]
             )
             env.AppendUnique(CXXFLAGS=["-Wplacement-new=1", "-Wvirtual-inheritance"])
-            # Need to fix a warning with AudioServer lambdas before enabling.
-            # if cc_version_major != 9:  # GCC 9 had a regression (GH-36325).
-            #    env.Append(CXXFLAGS=["-Wnoexcept"])
             if cc_version_major >= 9:
                 env.AppendUnique(CCFLAGS=["-Wattribute-alias=2"])
             if cc_version_major >= 11:  # Broke on MethodBind templates before GCC 11.
