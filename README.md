@@ -6,7 +6,7 @@
   </a>
 </p>
 
-[
+
 
 ## 2D and 3D cross-platform game engine
 
