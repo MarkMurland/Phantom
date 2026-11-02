@@ -1,16 +1,16 @@
-# Redot Engine
+# Phantom Engine
 
 <p align="center">
-  <a href="https://redotengine.org/">
-    <img src="logo_outlined.png" width="400" alt="Redot Engine logo">
+  <a href="Placeholder">
+    <img src="logo_outlined.png" width="400" alt="Phantom Engine logo">
   </a>
 </p>
 
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Redot-Engine/redot-engine)
+[
 
 ## 2D and 3D cross-platform game engine
 
-**[Redot Engine](https://redotengine.org) is a feature-packed, cross-platform
+**[Phantom Engine](PlaceHolder) is a feature-packed, cross-platform
 game engine to create 2D and 3D games from a unified interface.** It provides a
 comprehensive set of common tools, so that
 users can focus on making games without having to reinvent the wheel. Games can
@@ -20,9 +20,9 @@ Web-based platforms and consoles.
 
 ## Free, open source and community-driven
 
-Redot is a completely free and open source fork of Godot under the very permissive MIT license.
+Phantom is a completely free and open source fork of Godot under the very permissive MIT license.
 No strings attached, no royalties, nothing. The users' games are theirs, down
-to the last line of engine code. Redot's development is fully independent and truly
+to the last line of engine code. Phantom's development is fully independent and truly
 community-driven, empowering users to help shape their engine to match their
 expectations.
 
@@ -32,53 +32,36 @@ Godot had been developed by [Juan Linietsky](https://github.com/reduz) and
 for several years as an in-house engine, used to publish several work-for-hire
 titles.
 
-Redot was forked from Godot in [September 2024](https://github.com/Redot-Engine/redot-engine/commit/a12e9de5dd831e1ce0c839f0420b278ef0a6aa5b),
+Phantom was forked from Godot in [September 2024](https://github.com/Phantom-Engine/Phantom-engine/commit/a12e9de5dd831e1ce0c839f0420b278ef0a6aa5b),
 intending to improve upon Godot in order to fulfill its potential and contribute to the shared
 codebase of both through a more genuinely community-driven model than Godot.
 
 [Kaetram - 2D Pixel Cross-Platform MMORPG by Keros](https://kaetram.com)
 <p align="center">
-	<img src="screenshot.jpg" width="900" alt="Redot Engine screenshot!">
+	<img src="screenshot.jpg" width="900" alt="Phantom Engine screenshot!">
 </p>
 
 ## Getting the engine
 
 ### Binary downloads
 
-Official binaries for the Redot editor and the export templates can be found
-[on the Redot website](https://redotengine.org/download) and on the [GitHub page](https://github.com/Redot-Engine/redot-engine).
+Official binaries for the Phantom editor and the export templates can be found
+[GitHub page](https://github.com/MarkMurland/Phantom).
 
 ### Compiling from source
 
-[See the official docs](https://docs.redotengine.org/en/Contributing/Development/compiling/getting_source)
+[See the official docs] Placeholder
 for compilation instructions for every supported platform.
 
-#### Using Nix (recommended)
-
-If you have the Nix package manager installed, you can build and run the editor in one command:
-
-```bash
-nix run .
-```
-
-This will automatically install all build dependencies and compile Redot if the binary doesn't exist.
-
-Detailed Nix usage, including passing SCons build flags through `nix run`, forwarding runtime arguments, and manual `nix develop` workflows, is documented in the `Nix usage guide` at `doc/nix.md`.
-
-
 ## Community and contributing
-
-Redot is not only an engine but an ever-growing community of users and engine
-developers. Please visit our [Discord server](https://discord.gg/redot)!
 
 To get started contributing to the project, see the [contributing guide](CONTRIBUTING.md).
 This document also includes guidelines for reporting bugs.
 
-Follow [Redot on X/Twitter](https://x.com/Redot_Engine)!
 ## Documentation and demos
 
-The class reference is accessible from the Redot editor.
+The class reference is accessible from the Phantom editor.
 
 ## AI Integration - Model Context Protocol (MCP)
 
-Redot supports AI integration using MCP. See the [setup instructions](doc/mcp-integration.md).
+Phantom supports AI integration using MCP. See the [setup instructions](doc/mcp-integration.md).
