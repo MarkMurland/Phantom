@@ -1,8 +1,11 @@
 <!--
-Please target the `master` branch in priority.
+Please target the `master` branch unless the maintainers request otherwise.
 
-Relevant fixes are cherry-picked for stable branches as needed by maintainers.
-
-To speed up the contribution process and avoid CI errors, please set up pre-commit hooks locally:
-https://docs.redotengine.org/en/latest/contributing/development/code_style_guidelines.html
+To help catch formatting issues before submitting, please install and run the repository's pre-commit hooks where applicable. See [CONTRIBUTING.md](../CONTRIBUTING.md) for project guidance.
 -->
+
+## What does this pull request change?
+
+## How was it tested?
+
+## Related issues
