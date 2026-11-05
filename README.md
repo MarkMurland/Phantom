@@ -12,9 +12,9 @@ Phantom is a game engine for creating 2D and 3D games from a unified interface. 
 
 ## About Phantom and its upstream projects
 
-Phantom is an independent fork of the [Redot Engine](https://redotengine.org/), which is itself derived from the [Godot Engine](https://godotengine.org/). Phantom builds on work from both projects and their contributors. Their documentation may be useful for engine concepts and inherited functionality, but it may describe behavior that differs from Phantom.
+Phantom is a fork of the [Redot Engine](https://redotengine.org/), which is itself derived from the [Godot Engine](https://godotengine.org/). Phantom's direct upstream is Redot—not Godot. Phantom builds on Redot's work while retaining attribution to Redot and Godot contributors as required by the applicable licenses and notices.
 
-Phantom-specific bug reports, feature requests, and support questions should be filed in [this repository](https://github.com/MarkMurland/Phantom/issues), so they reach the Phantom project.
+One goal of Phantom is to support CPUs that Redot's SSE4.2 requirement excludes. Phantom-specific bug reports, feature requests, and support questions should be filed in [this repository](https://github.com/MarkMurland/Phantom/issues), so they reach the Phantom project.
 
 Phantom's core engine code is distributed under the MIT license. Third-party components may have separate licenses and notices. Please see [LICENSE.txt](LICENSE.txt), [COPYRIGHT.txt](COPYRIGHT.txt), and the relevant source-file notices for licensing and attribution information. Upstream copyright and license notices are retained where applicable.
 
