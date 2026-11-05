@@ -1,67 +1,41 @@
 # Phantom Engine
 
 <p align="center">
-  <a href="Placeholder">
+  <a href="https://github.com/MarkMurland/Phantom">
     <img src="logo_outlined.png" width="400" alt="Phantom Engine logo">
   </a>
 </p>
 
+## A cross-platform 2D and 3D game engine
 
+Phantom is a game engine for creating 2D and 3D games from a unified interface. It provides a broad set of tools for building games and supports exporting projects to desktop, mobile, web, and other supported platforms.
 
-## 2D and 3D cross-platform game engine
+## About Phantom and its upstream projects
 
-**[Phantom Engine](PlaceHolder) is a feature-packed, cross-platform
-game engine to create 2D and 3D games from a unified interface.** It provides a
-comprehensive set of common tools, so that
-users can focus on making games without having to reinvent the wheel. Games can
-be exported with one click to a number of platforms, including the major desktop
-platforms (Linux, macOS, Windows), mobile platforms (Android, iOS), as well as
-Web-based platforms and consoles.
+Phantom is an independent fork of the [Redot Engine](https://redotengine.org/), which is itself derived from the [Godot Engine](https://godotengine.org/). Phantom builds on work from both projects and their contributors. Their documentation may be useful for engine concepts and inherited functionality, but it may describe behavior that differs from Phantom.
 
-## Free, open source and community-driven
+Phantom-specific bug reports, feature requests, and support questions should be filed in [this repository](https://github.com/MarkMurland/Phantom/issues), so they reach the Phantom project.
 
-Phantom is a completely free and open source fork of Godot under the very permissive MIT license.
-No strings attached, no royalties, nothing. The users' games are theirs, down
-to the last line of engine code. Phantom's development is fully independent and truly
-community-driven, empowering users to help shape their engine to match their
-expectations.
-
-Before being open sourced in [February 2014](https://github.com/godotengine/godot/commit/0b806ee0fc9097fa7bda7ac0109191c9c5e0a1ac),
-Godot had been developed by [Juan Linietsky](https://github.com/reduz) and
-[Ariel Manzur](https://github.com/punto-) (both still maintaining Godot)
-for several years as an in-house engine, used to publish several work-for-hire
-titles.
-
-Phantom was forked from Godot in [September 2024](https://github.com/Phantom-Engine/Phantom-engine/commit/a12e9de5dd831e1ce0c839f0420b278ef0a6aa5b),
-intending to improve upon Godot in order to fulfill its potential and contribute to the shared
-codebase of both through a more genuinely community-driven model than Godot.
-
-[Kaetram - 2D Pixel Cross-Platform MMORPG by Keros](https://kaetram.com)
-<p align="center">
-	<img src="screenshot.jpg" width="900" alt="Phantom Engine screenshot!">
-</p>
+Phantom's core engine code is distributed under the MIT license. Third-party components may have separate licenses and notices. Please see [LICENSE.txt](LICENSE.txt), [COPYRIGHT.txt](COPYRIGHT.txt), and the relevant source-file notices for licensing and attribution information. Upstream copyright and license notices are retained where applicable.
 
 ## Getting the engine
 
 ### Binary downloads
 
-Official binaries for the Phantom editor and the export templates can be found
-[GitHub page](https://github.com/MarkMurland/Phantom).
+Download Phantom releases and editor builds from the [GitHub Releases page](https://github.com/MarkMurland/Phantom/releases). If no release is available for your platform, you can build Phantom from source.
 
 ### Compiling from source
 
-[See the official docs] Placeholder
-for compilation instructions for every supported platform.
+See the [build instructions in the documentation](https://docs.redotengine.org/en/latest/contributing/development/compiling/), noting that upstream instructions may need adjustment for Phantom.
 
-## Community and contributing
+## Contributing
 
-To get started contributing to the project, see the [contributing guide](CONTRIBUTING.md).
-This document also includes guidelines for reporting bugs.
+See the [contributing guide](CONTRIBUTING.md) for how to propose changes and report bugs. Contributions are welcome, but submitting a pull request or feature proposal does not guarantee acceptance. I, as the project owner and maintainer, make the final decisions on whether contributions are merged and on Phantom's scope and direction.
 
 ## Documentation and demos
 
-The class reference is accessible from the Phantom editor.
+The class reference is available from the Phantom editor. For upstream documentation, see the [Redot documentation](https://docs.redotengine.org/) and [Godot documentation](https://docs.godotengine.org/); check that guidance against Phantom when necessary.
 
-## AI Integration - Model Context Protocol (MCP)
+## AI integration — Model Context Protocol (MCP)
 
 Phantom supports AI integration using MCP. See the [setup instructions](doc/mcp-integration.md).
