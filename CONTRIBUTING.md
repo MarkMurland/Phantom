@@ -6,15 +6,15 @@ Phantom is derived from the Redot Engine and Godot Engine. Their documentation a
 
 ## Community conduct
 
-The Phantom community expects respectful, responsible participation:
+The Phantom community welcomes everyone who comes in peace to support the project.
 
-1. The dev1galaxy.org forum welcomes all those who come in peace to support the Devuan project!
-2. Responsible behavior based on a foundation of mutual respect is expected from visitors to this forum.
-3. If chaos erupts from forgetting the above, we will lock/ban our way to a more harmonious and productive environment.
-4. We accept everyone's contributions, we don't care if you're liberal or conservative, black or white, straight or gay, or anything in between! In fact, we won't bring it up or ask (nor should you).
-5. Remember, this is a meeting place for professional admins as well as a rainbow of users who all share a love of Linux.  So please play nice.  smile
+Responsible behavior based on mutual respect is expected from everyone who participates in Phantom discussions, issue threads, pull requests, and community spaces. We are here to build, share, and improve the engine in a constructive environment.
 
-These statements are reproduced from the Devuan community wording provided for this project. References to the Devuan forum describe its original community context; Phantom moderation applies to participation in Phantom spaces.
+If behavior becomes disruptive or harmful, maintainers may take action to restore a more productive and respectful atmosphere. This includes removing disruptive comments, restricting access when necessary, or otherwise enforcing community standards.
+
+We welcome contributions from all people regardless of political view, background, identity, or experience. We do not ask for unrelated personal details, and we do not tolerate harassment, abuse, or hostility. Please keep the focus on the project, the code, and the work.
+
+This project brings together people with different experience levels and perspectives, from hobbyists to professional developers. Please be courteous, constructive, and respectful. The goal is to create a healthy, welcoming place for game development and engine work.
 
 ## Reporting bugs
 
