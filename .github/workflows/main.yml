@@ -1,7 +1,7 @@
-name: Redot editor (no SSE4.2)
+name: Phantom Engine
 on:
   push:
-    branches: ["26.3-No-SSE4.2"]
+    branches: master
   workflow_dispatch:
 
 jobs:
