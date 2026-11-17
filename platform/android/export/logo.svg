@@ -1,1 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><path fill="#56d881" d="M22.904 20.192a1.25 1.25 0 1 1 1.25-1.25 1.25 1.25 0 0 1-1.25 1.25m-13.808 0a1.25 1.25 0 1 1 1.25-1.25 1.25 1.25 0 0 1-1.25 1.25m14.256-7.525 2.496-4.323a.52.52 0 1 0-.899-.52l-2.528 4.378a15.69 15.69 0 0 0-12.842 0L7.051 7.823a.52.52 0 1 0-.9.521l2.497 4.323C4.361 15 1.43 19.34 1 24.467h30c-.43-5.128-3.361-9.468-7.648-11.8"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="256" viewBox="0 0 1024 256" role="img" aria-label="Phantom logo">
+  <defs>
+    <linearGradient id="phantom-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7dd3fc"/>
+      <stop offset="50%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#5eead4"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(32,20)">
+    <path d="M128 12L232 92L128 212L24 92L128 12Z" fill="url(#phantom-gradient)" stroke="#f8fafc" stroke-width="10" stroke-linejoin="round"/>
+    <path d="M128 48L188 93L128 170L68 93L128 48Z" fill="#f8fafc" fill-opacity="0.9"/>
+    <path d="M196 12L244 92L196 212L148 92L196 12Z" fill="none" stroke="#f8fafc" stroke-width="10" stroke-linejoin="round"/>
+  </g>
+  <text x="320" y="160" font-size="118" font-weight="800" letter-spacing="10" fill="#f8fafc" stroke="#0f172a" stroke-width="4" paint-order="stroke fill" font-family="Segoe UI, Inter, Arial, sans-serif">PHANTOM</text>
+</svg>
