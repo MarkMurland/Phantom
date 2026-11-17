@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://github.com/MarkMurland/Phantom">
-    <img src="logo_outlined.png" width="400" alt="Phantom Engine logo">
+    <img src="logo/phantom-splash.png" width="400" alt="Phantom Engine splash screen logo">
   </a>
 </p>
 
