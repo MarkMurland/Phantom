@@ -1,0 +1,52 @@
+name: Windows editor build
+
+on:
+  push:
+    branches: ["master", "main"]
+  workflow_dispatch:
+
+jobs:
+  windows-build:
+    runs-on: windows-2022
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install SCons
+        shell: bash
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install scons
+
+      - name: Configure MSVC environment
+        uses: ilammy/msvc-dev-cmd@v1
+        with:
+          arch: amd64
+
+      - name: Build Phantom Windows editor
+        shell: bash
+        run: |
+          scons platform=windows target=editor arch=x86_64 debug_symbols=no -j2
+
+      - name: Show build output
+        shell: bash
+        run: |
+          echo "Build tree:"
+          find bin -maxdepth 4 -type f 2>/dev/null | sort | head -200
+
+      - name: Upload build artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: phantom-windows-editor
+          path: |
+            bin/**
+          if-no-files-found: warn
